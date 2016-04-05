@@ -1,15 +1,135 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    doft.css                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: tvisenti <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2016/04/04 13:44:58 by tvisenti          #+#    #+#              #
-#    Updated: 2016/04/04 13:45:01 by tvisenti         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 body {
-  background-color: black;
+  background-color: #4d4d4d;
+  width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  max-width: 1500px;
+  max-height: 450px;
+  box-shadow: 10px 10px 5px black;
+}
+
+.bandeau {
+  background-color: #909090;
+}
+
+.bordure {
+  border: 10px solid;
+  border-radius: 15px;
+  border-color: #909090;
+}
+
+.bordered {
+  border: 5px solid;
+  border-radius: 4px;
+  border-color: red;
+}
+
+img.img-dday {
+  position: relative;
+  margin-left: -800px;
+}
+
+img.img-loupe {
+  float: right;
+  margin-top: 20px;
+}
+
+img.img-reload {
+  float: right;
+}
+
+img.img-close {
+  float: right;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 1026px;
+}
+
+.plate-left {
+  background-color: #909090;
+  height: 450px;
+  width: 150px;
+  margin: 20px 30px 30px 30px;
+  float: left;
+  box-shadow: 10px 10px 5px black;
+}
+
+.plate-right {
+  background-color: #909090;
+  height: 450px;
+  width: 150px;
+  margin: 6px 30px 30px 30px;
+  float: right;
+  box-shadow: 10px 10px 5px black;
+}
+
+
+img.cluster {
+  box-shadow: 10px 10px 5px black;
+  margin-top: 6px;
+}
+
+img.img-left {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.brick {
+  background-image: url("resources/brick.png");
+  width: 70px;
+  height: auto;
+}
+
+.green-screen {
+  background-color: #99ff99;
+  box-shadow: 10px 10px 5px black;
+  border-radius: 20px;
+  height: 150px;
+  width: 550px;
+  margin-left: 100px;
+  margin-top: -100px;
+  position: relative;
+  font-family: sans-serif;
+}
+
+p {
+  margin-left: 10px;
+}
+
+.entrez {
+  font-size: 30px;
+}
+
+input.text-form {
+  width: 60%;
+  margin-left: 10px;
+}
+
+input.submit-form {
+  margin-left: 10px;
+}
+
+.ordidi {
+  text-shadow: 4px 4px 6px red;
+}
+
+.ikea {
+  background-color: transparent;
+  position: absolute;
+  height: 250px;
+  width: 100px;
+  margin-left: 600px;
+  margin-top: 350px;
+}
+
+.apple {
+  background-color: transparent;
+  position: absolute;
+  height: 150px;
+  width: 180px;
+  margin-left: 1060px;
+  margin-top: 350px;
 }
