@@ -1,0 +1,33 @@
+#menu ul {
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ text-align:center;
+ font-family: fantasy;
+ font-size: 30px;
+ }
+#menu li {
+ float: left;
+ margin: auto;
+ padding: 0;
+ background-color: black;
+ }
+#menu li a {
+ display: block;
+ width: 300px;
+ color: white;
+ text-decoration: none;
+ padding: 5px;
+ }
+#menu li a:hover {
+ color: yellow;
+ }
+ #menu ul li ul {
+ display: none;
+ }
+ #menu ul li:hover ul {
+ display: block;
+ }
+#menu li:hover ul li {
+ float: none;
+ }
