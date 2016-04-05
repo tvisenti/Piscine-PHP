@@ -1,5 +1,5 @@
 body {
-  background-color: #4d4d4d;
+  background-color: #505050;
   width: 1520px;
   margin-left: auto;
   margin-right: auto;
@@ -17,7 +17,7 @@ body {
 
 .bordure {
   border: 10px solid;
-  border-radius: 15px;
+  border-radius: 10px;
   border-color: #909090;
 }
 
@@ -84,12 +84,11 @@ img.img-left {
 }
 
 .green-screen {
-  background-color: #99ff99;
+  background-color: #88ff89;
   box-shadow: 10px 10px 5px black;
-  border-radius: 20px;
+  border-radius: 10px;
   height: 150px;
   width: 550px;
-  margin-left: 100px;
   margin-top: -100px;
   position: relative;
   font-family: sans-serif;
@@ -101,6 +100,8 @@ p {
 
 .entrez {
   font-size: 30px;
+  font-family: serif;
+  font-family: Georgia;
 }
 
 input.text-form {
