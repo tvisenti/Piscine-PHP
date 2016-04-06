@@ -17,8 +17,7 @@
         return ($str);
     }
 
-    $num = 1;
-    foreach (array_slice($argv, $num) as $elem)
+    foreach (array_slice($argv, 1) as $elem)
     {
         $tab = epur_str($elem);
         if ($tab2)
