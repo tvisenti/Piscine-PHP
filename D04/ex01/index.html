@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+        body {
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        input {
+            width: 30%;
+            border-radius: 10px;
+            height: 50px;
+            font-size: 15px;
+        }
+        button {
+            width: 30%;
+            border-radius: 10px;
+            height: 50px;
+            font-size: 15px;
+            background-color: pink;
+            padding: 16px 32px;
+            margin-top: 20px;
+        }
+        input[type=text],
+        input[type=password] {
+            margin-top: 20px;
+            margin-right: 20px;
+            padding-left: 10px;
+        }
+        </style>
+    </head>
+
+    <body><center>
+        <form method="post" action="create.php">
+            Identifiant: <input type="text" name="login" placeholder="login"/>
+            Mot de passe: <input type="password" name="passwd" placeholder="password"/>
+                <br>
+            <button type="submit" name="submit" value="OK"/>Submit</button>
+        </form>
+    </center></body>
+</html>
