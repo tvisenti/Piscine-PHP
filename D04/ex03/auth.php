@@ -5,8 +5,9 @@
         $password = hash(whirlpool, $passwd);
         foreach ($arr_lp as &$user)
         {
-            if ($user["login"] === $login && $user["passwd"] === $password)
+            if ($user["login"] == $login && $user["passwd"] == $password)
                 return TRUE;
+
         }
         return FALSE;
     }
