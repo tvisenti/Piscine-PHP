@@ -8,18 +8,20 @@ D01 : https://cdn.intra.42.fr/pdf/pdf/35/j01.pdf V
 
 D02 : https://cdn.intra.42.fr/pdf/pdf/36/j02.pdf F
 
-D03 : https://cdn.intra.42.fr/pdf/pdf/37/j03.pdf
+D03 : https://cdn.intra.42.fr/pdf/pdf/37/j03.pdf V
 
-D05 : https://cdn.intra.42.fr/pdf/pdf/38/j04.pdf
+D04 : https://cdn.intra.42.fr/pdf/pdf/38/j04.pdf V
 
-R01 : https://cdn.intra.42.fr/pdf/pdf/47/rush0.pdf
+R00 : https://cdn.intra.42.fr/pdf/pdf/47/rush0.pdf V
 
-D06 :
+D05 : https://cdn.intra.42.fr/pdf/pdf/42/j05.pdf
 
-D07 :
+D06 : https://cdn.intra.42.fr/pdf/pdf/43/j06.pdf
 
-D08 :
+D07 : https://cdn.intra.42.fr/pdf/pdf/44/j07.pdf
 
-D09 :
+D08 : https://cdn.intra.42.fr/pdf/pdf/45/j08.pdf
 
-R02 :
+D09 : https://cdn.intra.42.fr/pdf/pdf/46/j09.pdf
+
+R01 : https://cdn.intra.42.fr/pdf/pdf/48/rush01.pdf
