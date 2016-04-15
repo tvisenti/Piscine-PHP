@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calcule moi ça</title>
+        <style>
+            body {
+                margin-top: 20%;
+                font-family: monospace;
+            }
+            select {
+                width: 10%;
+                border-radius: 10px;
+                height: 50px;
+                font-size: 15px;
+                outline: none;
+            }
+            input {
+                width: 30%;
+                border-radius: 10px;
+                height: 50px;
+                font-size: 15px;
+                margin-top: 20px;
+                text-align: center;
+                outline: none;
+            }
+            input[type=submit] {
+                background-color: pink;
+            }
+            input[type=text] {
+                font-size: 42px;
+            }
+            </style>
+        </style>
+    </head>
+    <body>
+
+
+
+        <center><input type="text" id="nb-left" name="nb-left" value="">
+        <select class="operator" id="operator" name="">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="nb-right" name="nb-right" value=""><br>
+        <input type="submit" name="submit" value="Try me!" onclick="calcul()">
+    </center>
+
+    <script language="javascript">
+        setInterval(function(){ alert("Please, use me ..."); }, 30000);
+        function calcul ()
+        {
+            var nb_left = document.getElementById('nb-left').value;
+            var nb_right = document.getElementById('nb-right').value;
+            var operator = document.getElementById('operator').value;
+            var result;
+            if (nb_left >= 0 && nb_right >= 0 && !Number.isInteger(nb_left) && !Number.isInteger(nb_right))
+            {
+                nb_left = parseInt(nb_left);
+                nb_right = parseInt(nb_right);
+                if (operator == '+')
+                    result = nb_left + nb_right;
+                else if (operator == '-')
+                    result = nb_left - nb_right;
+                else if (operator == '*')
+                    result = nb_left * nb_right;
+                else if (operator == '/')
+                {
+                    if (nb_right == 0 || nb_left == 0)
+                    {
+                        alert("It's over 9000")
+                        console.log("It's over 9000");
+                        return;
+                    }
+                    result = nb_left / nb_right;
+                }
+                else if (operator == '%')
+                {
+                    if (nb_right == 0 || nb_left == 0)
+                    {
+                        alert("It's over 9000")
+                        console.log("It's over 9000");
+                        return;
+                    }
+                    result = nb_left % nb_right;
+                }
+                console.log(result);
+                alert(result);
+            }
+            else
+            {
+                alert("ERROR :(")
+                console.log("ERROR :(");
+            }
+        }
+
+    </script>
+
+
+    </body>
+</html>

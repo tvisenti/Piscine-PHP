@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Le gros ballon</title>
+        <style>
+            .ballon {
+                max-width: 420px;
+                max-height: 420px;
+                border-radius: 100%;
+                margin-top: 30%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script language="javascript">
+        function changeSize ()
+        {
+            var elem = document.getElementById('target');
+            var wid = parseInt(elem.style.width, 10);
+            var hei = parseInt(elem.style.height, 10);
+            wid += 10;
+            hei += 10;
+            if (wid < 420)
+            {
+                elem.style.width = wid + 'px';
+                elem.style.height = hei + 'px';
+            }
+            else
+            {
+                elem.style.width = '200px';
+                elem.style.height = '200px';
+            }
+        }
+
+        function changeColor ()
+        {
+            var elem = document.getElementById('target');
+            var actual = elem.style.backgroundColor;
+            if (actual == "red")
+                elem.style.backgroundColor = "green";
+            else if (actual == "green")
+                elem.style.backgroundColor = "blue";
+            else
+                elem.style.backgroundColor = "red";
+        }
+
+        function changeSizeOut ()
+        {
+            var elem = document.getElementById('target');
+            var wid = parseInt(elem.style.width, 10);
+            var hei = parseInt(elem.style.height, 10);
+            if (wid != 200)
+            {
+                wid -= 5;
+                hei -= 5;
+                elem.style.width = wid + 'px';
+                elem.style.height = hei + 'px';
+            }
+        }
+
+        function changeColorOut ()
+        {
+            var elem = document.getElementById('target');
+            var actual = elem.style.backgroundColor;
+            if (actual == "red")
+                elem.style.backgroundColor = "blue";
+            else if (actual == "blue")
+                elem.style.backgroundColor = "green";
+            else
+                elem.style.backgroundColor = "red";
+        }
+        </script>
+
+        <center>
+            <div class="ballon" id="target" onclick="changeSize();changeColor()" onmouseout="changeSizeOut();changeColorOut()" style="width: 200px;height: 200px;background-color: red;"></div>
+        </center>
+    </body>
+</html>
